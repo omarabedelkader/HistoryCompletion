@@ -1,1 +1,26 @@
-'From Pharo13.0.0SNAPSHOT of 24 January 2025 [Build information: Pharo-13.0.0+SNAPSHOT.build.445.sha.ed7e8e8acbda5de0b6f1f87dafb555ff7c0c517c (64 Bit)] on 24 January 2025 at 6:17:12.67645 pm'!Announcement subclass: #CoxmpletionItemSelected	instanceVariableNames: 'item'	classVariableNames: ''	package: 'HeuristicCompletion-Model-SessionHeuristic'!!CoxmpletionItemSelected methodsFor: 'accessing' stamp: '1/24/2025 18:08'!selectedItem: anItem	item := anItem! !!CoxmpletionItemSelected methodsFor: 'accessing' stamp: '1/24/2025 18:10'!selectedItem	^ item ! !
+"
+I implement a completion context for benchmark purposes.
+I contain an AST and provide information for the autocompletion based on it.
+See CoStaticBenchmarks.
+"
+Class {
+	#name : 'CompletionItemSelected',
+	#superclass : 'Announcement',
+	#instVars : [
+		'item',
+	],
+	#category : 'HeuristicCompletion-Model-SessionHeuristic',
+	#package : 'HeuristicCompletion-Model-SessionHeuristic'
+}
+
+
+{ #category : 'accessing' }
+CompletionItemSelected >> selectedItem: anItem [
+
+	item := anItem
+]
+
+CompletionItemSelected >> selectedItem [
+
+	^ item
+]
