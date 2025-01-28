@@ -1,7 +1,5 @@
 "
-I implement a completion context for benchmark purposes.
-I contain an AST and provide information for the autocompletion based on it.
-See CoStaticBenchmarks.
+I'm a class that launch an annucement at each modification of a method 
 "
 Class {
 	#name : 'CompletionItemSelected',
